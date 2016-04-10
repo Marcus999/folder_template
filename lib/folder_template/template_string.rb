@@ -53,7 +53,7 @@ module FolderTemplate
       result = []
       tail = template
       loop do
-        head, token, tail = tail.partition( VARIABLE_PATTERN )
+        head, _token, tail = tail.partition( VARIABLE_PATTERN )
         result << head if !head.empty?
         break if $1.nil?
         result << $1.to_sym

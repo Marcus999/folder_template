@@ -1,8 +1,8 @@
 # =============================================================================
-#  
+#
 # MODULE      : rakefile.rb
 # PROJECT     : FolderTemplate
-# DESCRIPTION : 
+# DESCRIPTION :
 #
 # Copyright (c) 2016, Marc-Antoine Argenton.  All rights reserved.
 # =============================================================================
@@ -24,19 +24,19 @@ begin
   def tty_green(str);         "\e[32m#{str}\e[0m" end
   def tty_blink(str);         "\e[5m#{str}\e[25m" end
   def tty_reverse_color(str); "\e[7m#{str}\e[27m" end
-  
-  
+
+
   desc 'Run unit tests everytime a source or test file is changed'
   task :autotest do
     Watch.new( '**/*.rb' ) do
       success = system "clear && rake test"
-      
+
       puts tty_green( "-" * w ) if success
       puts tty_reverse_color(tty_red( "-" * w )) if !success
     end
   end
 
-rescue Exception => e
+rescue
 end
 
 task :default => [:test, :build]
