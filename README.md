@@ -34,10 +34,12 @@ template.generate( fs, env )
 
 ## FsAdapter
 
-All filesystem operation are abstracted through an `FsAdapter` object that performs final
-filename expansion, and execute all filesystem manipulations.
+All filesystem operation are abstracted through an `FsAdapter` object that
+performs final filename expansion, and execute all filesystem manipulations.
 
-The `FsAdapter` interface is composed of 3 methods; any class implementing those 3 methods can be used in place of the default `FsAdapter` object to perform the necessary filesystem operations.
+The `FsAdapter` interface is composed of 3 methods; any class implementing
+those 3 methods can be used in place of the default `FsAdapter` object to
+perform the necessary filesystem operations.
 
 ```ruby
 def makedirs( dirname )
