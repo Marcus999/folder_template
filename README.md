@@ -1,7 +1,9 @@
 # FolderTemplate
 
 [![Gem Version](https://badge.fury.io/rb/folder_template.svg)](https://badge.fury.io/rb/folder_template)
-[![Code Climate](https://codeclimate.com/github/marcus999/folder_template/badges/gpa.svg)](https://codeclimate.com/github/marcus999/folder_template)
+[![Code Climate](https://codeclimate.com/github/Marcus999/folder_template/badges/gpa.svg)](https://codeclimate.com/github/Marcus999/folder_template)
+[![Issue Count](https://codeclimate.com/github/Marcus999/folder_template/badges/issue_count.svg)](https://codeclimate.com/github/Marcus999/folder_template)
+
 [![Build Status](https://travis-ci.org/folder_template/folder_template.svg?branch=master)](https://travis-ci.org/folder_template/folder_template)
 
 
