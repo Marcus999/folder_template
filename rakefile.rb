@@ -37,6 +37,7 @@ begin
   end
 
 rescue LoadError
+  puts "'rake autotest' unavailable"
 end
 
-task :default => [:test, :build]
+task default: [:test, :build]
