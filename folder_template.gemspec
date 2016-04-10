@@ -16,10 +16,10 @@ Gem::Specification.new do |spec|
   spec.authors      = ["Marc-Antoine Argenton"]
   spec.email        = ["maargenton.dev@gmail.com"]
   spec.summary      = "Simple and generic folder structure template engine"
-  spec.description  = %q{ Template engine to generate files and folders structure from a
-                          tempalte folder layout. Include simple variable expansion, automatic
-                          variables for filename and basename, and options to append content to
-                          existing files.
+  spec.description  = %q{ FolderTemplate is a minimalistic template engine that generates files and
+                          folders structure from a template folder layout. It includes a simple variable
+                          expansion syntax, automatically injects variables for filename and basename,
+                          and can optionally append content to existing files.
                       }.gsub( /\s+/, ' ').strip
   spec.homepage     = ""
 
