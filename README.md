@@ -1,8 +1,9 @@
 # FolderTemplate
 
-[![Gem Version](https://badge.fury.io/rb/rr.svg)](http://badge.fury.io/rb/rr)
-[![Build Status](https://travis-ci.org/rr/rr.svg?branch=master)](https://travis-ci.org/rr/rr)
-[![Code Climate GPA](https://codeclimate.com/github/rr/rr.svg)](https://codeclimate.com/github/rr/rr)
+[![Gem Version](https://badge.fury.io/rb/folder_template.svg)](https://badge.fury.io/rb/folder_template)
+[![Code Climate](https://codeclimate.com/github/marcus999/folder_template/badges/gpa.svg)](https://codeclimate.com/github/marcus999/folder_template)
+[![Build Status](https://travis-ci.org/folder_template/folder_template.svg?branch=master)](https://travis-ci.org/folder_template/folder_template)
+
 
 
 FolderTemplate is a minimalistic template engine that generates files and
