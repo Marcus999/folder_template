@@ -17,7 +17,7 @@ Rake::TestTask.new do |t|
 end
 
 begin
-  require 'watch'
+  require 'wateech'
   w = `tput cols`.to_i || 80
 
   def tty_red(str);           "\e[31m#{str}\e[0m" end
@@ -36,7 +36,7 @@ begin
     end
   end
 
-rescue
+rescue LoadError
 end
 
 task :default => [:test, :build]
