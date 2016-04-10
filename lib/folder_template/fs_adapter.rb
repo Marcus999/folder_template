@@ -1,8 +1,8 @@
 # =============================================================================
-#  
+#
 # MODULE      : lib/folder_template/fs_adapter.rb
 # PROJECT     : FolderTemplate
-# DESCRIPTION : 
+# DESCRIPTION :
 #
 # Copyright (c) 2016, Marc-Antoine Argenton.  All rights reserved.
 # =============================================================================
@@ -25,11 +25,11 @@ module FolderTemplate
       puts "Creating diectory #{dirname} ..." if opts[:verbose]
       FileUtils.makedirs( target )
     end
-    
+
     def write_to_file( filename, content )
       target = File.join( base_path, filename )
-      
-      if ( File.exists?( target ) && ! opts[:overwrite_files] )
+
+      if ( File.exist?( target ) && ! opts[:overwrite_files] )
         puts "Skiping file #{filename} ..." if opts[:verbose]
       else
         puts "Generating file #{filename} ..." if opts[:verbose]
@@ -40,25 +40,11 @@ module FolderTemplate
 
     def append_to_file( filename, content )
       target = File.join( base_path, filename )
-      
+
       puts "Appending content to file #{filename} ..." if opts[:verbose]
       FileUtils.makedirs( File.dirname( target ) )
       File.open( target, "a" ) { |f| f.write( content ) }
     end
   end # class FsAdapter
-  
+
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
