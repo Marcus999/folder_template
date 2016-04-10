@@ -17,7 +17,7 @@ Rake::TestTask.new do |t|
 end
 
 begin
-  require 'wateech'
+  require 'watch'
   w = `tput cols`.to_i || 80
 
   def tty_red(str);           "\e[31m#{str}\e[0m" end
