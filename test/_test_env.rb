@@ -21,9 +21,7 @@ require 'lib/folder_template.rb'
 module Minitest::Assertions
   def assert_folders_match( expected_folder, actual_folder )
     diffs = _diff_folders( expected_folder, actual_folder )
-    assert diffs.empty?,
-      "Expected folders content to match:\n#{diffs}\n"
-      # "Expected folders to match:\nexpected: #{expected_folder.inspect}\nactual: #{expected_folder.inspect}\ndiffs:\n#{diffs}"
+    assert diffs.empty?, "Expected folders content to match:\n#{diffs}\n"
   end
 
 private
