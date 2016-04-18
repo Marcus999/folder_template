@@ -15,7 +15,7 @@ require 'rr'
 
 require 'lib/folder_template.rb'
 
-Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
+# Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
 
 
 module Minitest::Assertions
