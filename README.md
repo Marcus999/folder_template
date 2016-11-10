@@ -56,3 +56,13 @@ Default implementation of `FsAdapter` accepts a few options:
 | ------------------ |---------|-----------------------|
 | `verbose`          | `false` | When `true`, log each operation that is performed |
 | `overwrite_files`  | `false` | When `true`, replace existing files with content generated from template |
+
+
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/__project__/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request

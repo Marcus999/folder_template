@@ -29,7 +29,7 @@ module FolderTemplate
     end
 
 
-    def generate( fs, **env )
+    def generate( fs, env )
       filename = filename_template.expand( env ).to_s
       basename = File.basename( filename, File.extname( filename ) )
 

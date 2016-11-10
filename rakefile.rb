@@ -36,6 +36,9 @@ begin
     end
   end
 
+  desc 'Alias for rake autotest'
+  task watch: [:autotest]
+
 rescue LoadError
   puts "'rake autotest' unavailable"
 end

@@ -28,7 +28,7 @@ module FolderTemplate
       @variables ||= _extract_variables( @content )
     end
 
-    def expand( **env )
+    def expand( env )
       fragments = content.map do |fragment|
         case fragment
         when Symbol
