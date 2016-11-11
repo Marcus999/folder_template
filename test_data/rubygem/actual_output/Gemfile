@@ -1,0 +1,13 @@
+# =============================================================================
+#
+# MODULE      : Gemfile
+# PROJECT     : FolderName
+# DESCRIPTION :
+#
+# Copyright (c) <<test_year>>, <<test_user>>.  All rights reserved.
+# =============================================================================
+
+
+
+source 'https://rubygems.org'
+gemspec

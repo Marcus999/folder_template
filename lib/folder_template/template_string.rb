@@ -17,7 +17,7 @@ module FolderTemplate
         @content = _parse( template )
       when Array
         @content = template.select do |fragment|
-          !fragment.nil? && !fragment.empty?
+          !fragment.nil? && !fragment.to_s.empty?
         end
       when TemplateString
         @content = template.content
@@ -36,7 +36,7 @@ module FolderTemplate
         else
           fragment
         end
-      end.select { |fragment| !fragment.nil? && !fragment.empty? }
+      end.select { |fragment| !fragment.nil? && !fragment.to_s.empty? }
       TemplateString.new( fragments )
     end
 
