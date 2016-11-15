@@ -1,36 +1,31 @@
 # =============================================================================
 #
-# MODULE      : folder_template.gemspec
-# PROJECT     : FolderTemplate
+# MODULE      : {{filename}}
+# PROJECT     : {{project_namespace}}
 # DESCRIPTION :
 #
-# Copyright (c) 2016, Marc-Antoine Argenton.  All rights reserved.
+# Copyright (c) {{copyright_year}}, {{copyright_owner}}.  All rights reserved.
 # =============================================================================
 
 
-require_relative 'lib/folder_template/version.rb'
+require_relative 'lib/{{project_name}}/version.rb'
 
 Gem::Specification.new do |spec|
-  spec.name         = 'folder_template'
-  spec.version      = FolderTemplate::VERSION
-  spec.authors      = ["Marc-Antoine Argenton"]
-  spec.email        = ["maargenton.dev@gmail.com"]
-  spec.summary      = "Simple and generic folder structure template engine"
-  spec.description  = %q{ FolderTemplate is a minimalistic template engine that generates files and
-                          folders structure from a template folder layout. It includes a simple variable
-                          expansion syntax, automatically injects variables for filename and basename,
-                          and can optionally append content to existing files.
+  spec.name         = '{{project_name}}'
+  spec.version      = {{project_namespace}}::VERSION
+  spec.authors      = ["{{copyright_owner}}"]
+  spec.email        = [""]
+  spec.summary      = ""
+  spec.description  = %q{
                       }.gsub( /\s+/, ' ').strip
   spec.homepage     = ""
 
   spec.files        = Dir['[A-Z]*', 'rakefile.rb', '*.gemspec'].reject { |f| f =~ /.lock/ }
   spec.files        += Dir['bin/**', 'lib/**/*.rb', 'test/**/*.rb', 'spec/**/*.rb', 'features/**/*.rb']
-  spec.files        += Dir['test_data/**/*']
-  spec.files        += Dir['templates/**/*']
   spec.executables  = spec.files.grep( %r{^bin/} ) { |f| File.basename(f) }
   spec.test_files   = spec.files.grep( %r{^(test|spec|features)/} )
 
-  spec.add_runtime_dependency 'facets', '~> 3.0'
+  # spec.add_runtime_dependency 'facets', '~> 3.0'
   # spec.add_runtime_dependency 'mustache', '~> 1.0'
 
   spec.add_development_dependency 'bundler', '~> 1.7'

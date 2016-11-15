@@ -37,6 +37,10 @@ module FolderTemplate
       end
     end
 
+    def self.validate_template_path( path )
+      File.readable?( File.join( path.to_s, "context.rb" ) ) &&
+          File.directory?( File.join( path.to_s, "template" ) )
+    end
 
   private
     def _load_template( path )

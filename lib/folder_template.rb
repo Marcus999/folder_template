@@ -21,3 +21,6 @@ require_relative 'folder_template/template_string.rb'
 require_relative 'folder_template/template_folder_entry.rb'
 require_relative 'folder_template/template_folder.rb'
 require_relative 'folder_template/context.rb'
+
+require_relative 'folder_template/template_registry.rb'
+require_relative 'folder_template/setup_folder_cmd.rb'

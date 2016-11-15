@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/folder_template.rb'
+
+FolderTemplate::SetupFolderCmd.run( ARGV )

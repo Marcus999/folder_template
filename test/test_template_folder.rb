@@ -18,27 +18,12 @@ module FolderTemplate
     let( :template )              { TemplateFolder.new( File.join( data_base_path, data_test_name, 'template_definition' ) ) }
     let( :expected_output_path )  { File.join( data_base_path, data_test_name, 'expected_output' ) }
     let( :actual_output_path )    { File.join( data_base_path, data_test_name, 'actual_output' ) }
-    # let( :base_env ) { Hash.new.merge(  project_name:       'project_aaa',
-    #                                     project_namespace:  'ProjectAaa',
-    #                                     copyright_owner:    'Me',
-    #                                     copyright_year:     'YEAR' ) }
 
     before do
       FileUtils.rm_rf( actual_output_path )
       FileUtils.makedirs( actual_output_path )
     end
 
-    # describe "test1" do
-    #   let( :data_test_name ) { 'test1' }
-    #   let( :env ) { base_env.merge( class_filename:'cls_fn', class_name:'ClsName' ) }
-    #
-    #   it "" do
-    #     fs = FsAdapter.new( actual_output_path, verbose:false )
-    #     template.generate(  fs, env )
-    #
-    #     assert_folders_match( expected_output_path, actual_output_path )
-    #   end
-    # end
 
     describe "rubygem" do
       let( :data_test_name ) { 'rubygem' }
