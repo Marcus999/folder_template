@@ -10,7 +10,6 @@
 
 require 'bundler/gem_tasks'
 require 'rake/testtask'
-require 'pp'
 
 task default: [:test, :build]
 
