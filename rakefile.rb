@@ -91,12 +91,12 @@ PROJECT_CONTEXT = {
 begin
   require_relative 'lib/folder_template'
 
-  task :add_class, :class_name do |t, args|
+  task :add_class, :class_name do |_t, args|
     context = PROJECT_CONTEXT.merge( name:args[:class_name])
     FolderTemplate::SetupFolderCmd.run( '.', 'rubyclass', context )
   end
 rescue LoadError
-  task :add_class, :class_name do |t, args|
+  task :add_class, :class_name do |_t, _args|
     puts
     puts "'rake add_class[class_name]' task requires the folder_template gem to be available"
     puts
