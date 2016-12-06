@@ -25,8 +25,8 @@ module FolderTemplate
       r
     end
 
-    def scan_location( path )
-      _list_template_folders( path ).each do |path|
+    def scan_location( base_path )
+      _list_template_folders( base_path ).each do |path|
         _register_template_path( path )
       end
       self
