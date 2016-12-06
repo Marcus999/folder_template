@@ -24,3 +24,4 @@ ratings:
 exclude_paths:
 - test/
 - templates/
+- test_data/
