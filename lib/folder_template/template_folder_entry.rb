@@ -51,8 +51,13 @@ module FolderTemplate
       basename = File.basename( filename )
       dirname = File.dirname( filename )
 
-      return false, filename if !basename.start_with?( ">>" )
-      return true, File.join( dirname, basename[2..-1] )
+      if basename.start_with?( ">>" )
+        return true, File.join( dirname, basename[2..-1] )
+      elsif basename.start_with?( "{{__append__}}" )
+        return true, File.join( dirname, basename[14..-1] )
+      end
+
+      return false, filename
     end
   end # class TemplateFolderEntry
 
