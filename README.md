@@ -20,7 +20,9 @@ and can optionally append content to existing files.
 - Variables are surrounded with double curly: `{{variable}}`
 - Variables can be part of filenames, folder names, and file content
 - Template filename with a `>>` prefix will append their content to an existing file
-
+- New in 1.0.1
+  - `{{__append__}}` prefix is also supported (to circumvent windows filesystem
+    limitations). Built-in 'rubyclass' template is using it.
 
 ## Usage
 
